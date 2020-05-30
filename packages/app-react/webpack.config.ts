@@ -7,9 +7,6 @@ const webpackConfig = (env): Configuration => ({
   entry: './src/index.tsx',
   resolve: {
     extensions: ['.ts', '.tsx', '.js'],
-    // alias: {
-    //   components: path.resolve(__dirname, './src/components/'),
-    // },
   },
   output: {
     path: path.join(__dirname, '/dist'),
