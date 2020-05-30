@@ -1,0 +1,21 @@
+{
+  "name": "@mxro/app-react",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack --mode production --env.production --progress",
+    "build:watch": "yarn clean && yarn compile:watch",
+    "compile": "../../node_modules/.bin/tsc -p tsconfig.json",
+    "compile:watch": "../../node_modules/.bin/tsc -p tsconfig.json --watch",
+    "start:watch": "webpack-dev-server --mode development --env.development --open --hot --progress"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.35",
+    "@types/react-dom": "^16.9.8"
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
