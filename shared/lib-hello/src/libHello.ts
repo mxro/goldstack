@@ -1,1 +1,1 @@
-export const message = 'hello trigger hello sadf';
+export const message = 'Hello from helloLib';

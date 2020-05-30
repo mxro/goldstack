@@ -13,7 +13,7 @@
     "build:watch": "npm run clean && npm run compile:watch",
     "compile": "../../node_modules/.bin/microbundle build --jsx React.createElement",
     "compile:watch": "../../node_modules/.bin/microbundle watch --jsx React.createElement",
-    "test": "../../node_modules/.bin/jest --passWithNoTests --config=../../jest.config.js",
+   
     "clean": "rm -rf ./dist",
     "prepublishOnly": "npm run build"
   },
