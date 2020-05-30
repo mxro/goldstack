@@ -1,0 +1,39 @@
+{
+  "name": "root",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "shared/*"
+  ],
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "bootstrap:prod": "NODE_ENV=production lerna bootstrap",
+    "postinstall": "npm run bootstrap",
+    "build": "lerna run build",
+    "compile": "lerna run compile",
+    "compile:watch": "lerna run --parallel compile:watch",
+    "clean": "lerna clean --yes",
+    "test": "jest --watch",
+    "test:ci": "jest",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format:check": "prettier .",
+    "format": "prettier --write .",
+    "coverage": "jest --coverage"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "lerna": "^3.20.2",
+    "eslint": "^6.8.0",
+    "typescript": "^3.8.3",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.3",
+    "@typescript-eslint/eslint-plugin": "^2.30.0",
+    "@typescript-eslint/parser": "^2.30.0",
+    "prettier": "^2.0.5",
+    "jest": "^25.4.0",
+    "@types/jest": "^25.2.1",
+    "ts-jest": "^25.4.0",
+    "npm-pack-zip": "^1.2.7"
+  }
+}

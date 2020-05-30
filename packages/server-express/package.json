@@ -1,0 +1,23 @@
+{
+  "name": "@mxro/server-express",
+  "version": "1.0.0",
+  "description": "Sample express server",
+  "main": "dist/serverExpress.js",
+  "author": "Max Rohde",
+  "license": "MIT",
+  "scripts": {
+    "build": "npm run clean && npm run compile",
+    "build:watch": "npm run clean && npm run compile:watch",
+    "compile": "../../node_modules/.bin/tsc -p tsconfig.json",
+    "compile:watch": "../../node_modules/.bin/tsc -p tsconfig.json --watch",
+    "test": "../../node_modules/.bin/jest --passWithNoTests --config=../../jest.config.js",
+    "clean": "rm -rf ./dist",
+    "prepublishOnly": "npm run build",
+    "start": "node dist/serverExpress.js"
+  },
+  "dependencies": {
+    "@mxro/lib-hello": "1.0.0",
+    "@types/express": "^4.17.6",
+    "express": "^4.17.1"
+  }
+}
