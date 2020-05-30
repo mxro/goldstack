@@ -1,13 +1,10 @@
 {
-  "extends": "../../tsconfig.base.json",
+  "extends": "../../tsconfig.ui.json",
   "include": [
     "./src/**/*"
   ],
   "compilerOptions": {
     "outDir": "dist",
-    "baseUrl": "..",
-    "jsx": "react",
-    "lib": ["dom" ],
-    "module": "ES2015" 
+    "baseUrl": ".."
   },
 }

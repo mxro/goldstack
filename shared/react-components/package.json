@@ -13,7 +13,6 @@
     "build:watch": "npm run clean && npm run compile:watch",
     "compile": "../../node_modules/.bin/microbundle build --jsx React.createElement",
     "compile:watch": "../../node_modules/.bin/microbundle watch --jsx React.createElement",
-   
     "clean": "rm -rf ./dist",
     "prepublishOnly": "npm run build"
   },

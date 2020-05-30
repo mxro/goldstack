@@ -7,6 +7,5 @@
     "outDir": "dist",
     "baseUrl": "..",
     "jsx": "react",
-    "lib": ["dom"]
   }
 }
