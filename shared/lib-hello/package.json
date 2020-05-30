@@ -2,7 +2,6 @@
   "name": "@mxro/lib-hello",
   "version": "1.0.0",
   "main": "dist/libHello.js",
-  "types": "dist/",
   "files": [
     "dist"
   ],
@@ -18,7 +17,7 @@
     "build:watch": "yarn clean && yarn compile:watch",
     "compile": "tsc -p tsconfig.json",
     "compile:watch": "tsc -p tsconfig.json --watch",
-    "test": "jest --passWithNoTests --config=./jest.config.js",
+    "test:ci": "jest --passWithNoTests --config=./jest.config.js",
     "coverage": "jest --collect-coverage --passWithNoTests --config=./jest.config.js",
     "clean": "rm -rf ./dist",
     "prepublishOnly": "yarn run build"

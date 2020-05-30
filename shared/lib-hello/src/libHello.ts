@@ -1,1 +1,1 @@
-export const message = 'Hello from helloLib';
+export const message = 'Hello from helloLib!';

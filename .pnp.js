@@ -2201,8 +2201,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@mxro/server-express", "workspace:packages/server-express"],
             ["@mxro/lib-hello", "workspace:shared/lib-hello"],
             ["@types/express", "npm:4.17.6"],
+            ["@types/jest", "npm:25.2.3"],
+            ["@types/node", "npm:14.0.6"],
             ["express", "npm:4.17.1"],
-            ["nodemon", "npm:2.0.4"]
+            ["jest", "npm:26.0.1"],
+            ["nodemon", "npm:2.0.4"],
+            ["ts-jest", "virtual:660177269f98fa3d275153cd92ef182276981667fe8e1ad128b0abf3fa10be4bb90d338b35bab51c89d3fc1f70dd1aa076ee37047b07463eb46d0d4583559ef7#npm:26.1.0"],
+            ["ts-node", "virtual:8946c89ae37d163ac2d4c0267a7ed26e7be4a1d69ce2300fef92e2ebabe12f85f2b00026f9c9fdbc3ba545b39977480552e66140a590b7534520da0b5b7526f5#npm:8.10.2"],
+            ["typescript", "patch:typescript@npm%3A3.9.4#builtin<compat/typescript>::version=3.9.4&hash=8cac75"]
           ],
           "linkType": "SOFT",
         }]
@@ -16468,6 +16474,22 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["make-error", "npm:1.3.6"],
             ["source-map-support", "npm:0.5.19"],
             ["typescript", "patch:typescript@npm%3A3.9.3#builtin<compat/typescript>::version=3.9.3&hash=8cac75"],
+            ["yn", "npm:3.1.1"]
+          ],
+          "packagePeers": [
+            "typescript"
+          ],
+          "linkType": "HARD",
+        }],
+        ["virtual:8946c89ae37d163ac2d4c0267a7ed26e7be4a1d69ce2300fef92e2ebabe12f85f2b00026f9c9fdbc3ba545b39977480552e66140a590b7534520da0b5b7526f5#npm:8.10.2", {
+          "packageLocation": "./.yarn/$$virtual/ts-node-virtual-071a5db541/0/cache/ts-node-npm-8.10.2-b4fe5a56b0-3.zip/node_modules/ts-node/",
+          "packageDependencies": [
+            ["ts-node", "virtual:8946c89ae37d163ac2d4c0267a7ed26e7be4a1d69ce2300fef92e2ebabe12f85f2b00026f9c9fdbc3ba545b39977480552e66140a590b7534520da0b5b7526f5#npm:8.10.2"],
+            ["arg", "npm:4.1.3"],
+            ["diff", "npm:4.0.2"],
+            ["make-error", "npm:1.3.6"],
+            ["source-map-support", "npm:0.5.19"],
+            ["typescript", "patch:typescript@npm%3A3.9.4#builtin<compat/typescript>::version=3.9.4&hash=8cac75"],
             ["yn", "npm:3.1.1"]
           ],
           "packagePeers": [
