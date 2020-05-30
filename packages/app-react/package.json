@@ -11,12 +11,19 @@
     "start:watch": "webpack-dev-server --mode development --env.development --open --hot --progress"
   },
   "devDependencies": {
-    "@types/react": "^16.9.35",
-    "@types/react-dom": "^16.9.8"
+    "@testing-library/jest-dom": "*",
+    "@testing-library/react": "*",
+    "@types/react": "*",
+    "@types/react-dom": "*",
+    "fork-ts-checker-webpack-plugin": "*",
+    "html-webpack-plugin": "*",
+    "webpack": "*",
+    "webpack-cli": "*",
+    "webpack-dev-server": "*"
   },
   "dependencies": {
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "@mxro/react-components": "1.0.0"
+    "@mxro/react-components": "1.0.0",
+    "react": "*",
+    "react-dom": "*"
   }
 }
