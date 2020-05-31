@@ -10,9 +10,7 @@
   "license": "MIT",
   "author": "Max Rohde",
   "main": "dist/goldstack.js",
-  "bin": {
-    "goldstack": "./bin/goldstack"
-  },
+  "bin": "./bin/goldstack",
   "files": [
     "dist"
   ],
