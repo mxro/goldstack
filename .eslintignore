@@ -1,2 +1,4 @@
+!.*.json
+tsconfig.json
 dist/
 node_modules/

@@ -2,17 +2,18 @@
   "name": "@mxro/server-express",
   "version": "1.0.0",
   "description": "Sample express server",
-  "main": "dist/serverExpress.js",
-  "author": "Max Rohde",
   "license": "MIT",
+  "author": "Max Rohde",
+  "main": "dist/serverExpress.js",
   "scripts": {
     "build": "yarn clean && yarn compile",
     "build:watch": "yarn clean && yarn compile:watch",
-    "compile": "tsc -p tsconfig.json",
-    "test": "jest --passWithNoTests --config=jest.config.js",
     "clean": "rm -rf ./dist",
+    "compile": "tsc -p tsconfig.json",
     "start": "yarn node dist/serverExpress.js",
-    "start:watch": "nodemon --watch ../../ --ext js --exec 'yarn node dist/serverExpress.js'"
+    "start:watch": "nodemon --watch ../../ --ext js --exec 'yarn node dist/serverExpress.js'",
+    "test": "jest --passWithNoTests --watch --config=jest.config.js",
+    "test:ci": "jest --passWithNoTests --config=jest.config.js"
   },
   "dependencies": {
     "@mxro/lib-hello": "workspace:*"

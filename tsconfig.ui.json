@@ -2,6 +2,6 @@
   "extends": "./tsconfig.base.json",
   "compilerOptions": {
     "jsx": "react",
-    "module": "ES2015" 
+    "module": "ES2015"
   }
 }

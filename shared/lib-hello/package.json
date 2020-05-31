@@ -1,27 +1,27 @@
 {
   "name": "@mxro/lib-hello",
   "version": "1.0.0",
+  "license": "MIT",
+  "author": "Max Rohde",
   "main": "dist/libHello.js",
   "files": [
     "dist"
   ],
+  "scripts": {
+    "build": "yarn clean && yarn compile",
+    "build:watch": "yarn clean && yarn compile:watch",
+    "clean": "rm -rf ./dist",
+    "compile": "tsc -p tsconfig.json",
+    "compile:watch": "tsc -p tsconfig.json --watch",
+    "coverage": "jest --collect-coverage --passWithNoTests --config=./jest.config.js",
+    "prepublishOnly": "yarn run build",
+    "test:ci": "jest --passWithNoTests --config=./jest.config.js"
+  },
   "devDependencies": {
     "@types/jest": "^25.2.3",
     "@types/node": "^14.0.6",
     "jest": "^26.0.1",
     "ts-jest": "^26.1.0",
     "typescript": "^3.9.3"
-  },
-  "scripts": {
-    "build": "yarn clean && yarn compile",
-    "build:watch": "yarn clean && yarn compile:watch",
-    "compile": "tsc -p tsconfig.json",
-    "compile:watch": "tsc -p tsconfig.json --watch",
-    "test:ci": "jest --passWithNoTests --config=./jest.config.js",
-    "coverage": "jest --collect-coverage --passWithNoTests --config=./jest.config.js",
-    "clean": "rm -rf ./dist",
-    "prepublishOnly": "yarn run build"
-  },
-  "author": "Max Rohde",
-  "license": "MIT"
+  }
 }

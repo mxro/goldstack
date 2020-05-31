@@ -1,23 +1,22 @@
 {
   "name": "@mxro/react-components",
   "version": "1.0.0",
-  "source": "src/index.ts",
+  "license": "MIT",
+  "author": "Max Rohde",
   "main": "dist/index.js",
+  "source": "src/index.ts",
   "files": [
     "dist"
   ],
-  "bundledDependencies": [],
   "scripts": {
     "build": "yarn clean && yarn compile",
     "build:watch": "yarn clean && yarn compile:watch",
+    "clean": "rm -rf ./dist",
     "compile": "tsc -p tsconfig.json",
     "compile:watch": "yarn compile --watch",
-    "clean": "rm -rf ./dist",
-    "test:ci": "jest --passWithNoTests --watch --config=jest.config.js",
-    "coverage": "jest --collect-coverage --passWithNoTests --config=./jest.config.js"
+    "coverage": "jest --collect-coverage --passWithNoTests --config=./jest.config.js",
+    "test:ci": "jest --passWithNoTests --config=jest.config.js"
   },
-  "author": "Max Rohde",
-  "license": "MIT",
   "dependencies": {
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
@@ -37,5 +36,6 @@
     "ts-jest": "^26.1.0",
     "ts-loader": "^7.0.5",
     "typescript": "^3.9.3"
-  }
+  },
+  "bundledDependencies": []
 }
