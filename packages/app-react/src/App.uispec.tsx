@@ -13,5 +13,5 @@ test('Check App component render', () => {
 });
 
 test('Ensure React singleton', () => {
-  expect(reactRef).toEqual(React);
+  expect(reactRef).toBe(React);
 });
