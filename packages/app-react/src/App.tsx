@@ -4,7 +4,7 @@ import { Hello } from '@mxro/react-components';
 const App = (): JSX.Element => (
   <>
     <Hello></Hello>
-    <p>On the homepage</p>
+    <p>On the homepage, yay!</p>
   </>
 );
 

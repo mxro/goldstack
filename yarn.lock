@@ -48,30 +48,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/core@npm:^7.10.2":
-  version: 7.10.2
-  resolution: "@babel/core@npm:7.10.2"
-  dependencies:
-    "@babel/code-frame": ^7.10.1
-    "@babel/generator": ^7.10.2
-    "@babel/helper-module-transforms": ^7.10.1
-    "@babel/helpers": ^7.10.1
-    "@babel/parser": ^7.10.2
-    "@babel/template": ^7.10.1
-    "@babel/traverse": ^7.10.1
-    "@babel/types": ^7.10.2
-    convert-source-map: ^1.7.0
-    debug: ^4.1.0
-    gensync: ^1.0.0-beta.1
-    json5: ^2.1.2
-    lodash: ^4.17.13
-    resolve: ^1.3.2
-    semver: ^5.4.1
-    source-map: ^0.5.0
-  checksum: 3/7cc75894e901505b9f741ba71c02c2ca35cedef9e5235d8db135244502c2f4fb7a5f179bf69ec7c8eee6b356dd0f0cd1157418fbea0f560b4c56d076bb86d454
-  languageName: node
-  linkType: hard
-
 "@babel/generator@npm:^7.10.1":
   version: 7.10.1
   resolution: "@babel/generator@npm:7.10.1"
@@ -81,18 +57,6 @@ __metadata:
     lodash: ^4.17.13
     source-map: ^0.5.0
   checksum: 3/7729a3d50c87690bdcb293a1ebefff6f38fb8d16e47666518501c37db3f8b1597dca6f196327e7fd75060053965abd565af4bc8eb1f0f1d633ce8069cc8edff9
-  languageName: node
-  linkType: hard
-
-"@babel/generator@npm:^7.10.2":
-  version: 7.10.2
-  resolution: "@babel/generator@npm:7.10.2"
-  dependencies:
-    "@babel/types": ^7.10.2
-    jsesc: ^2.5.1
-    lodash: ^4.17.13
-    source-map: ^0.5.0
-  checksum: 3/69e9d70293631ec1a58622411ae38e31cf8ef5969ff4ce3ae04a8fdad3225331d73856975c2d11fd485e830e9fb34235304b5e1955406aaa2f9d1a6c5a9f7b19
   languageName: node
   linkType: hard
 
@@ -379,15 +343,6 @@ __metadata:
   bin:
     parser: ./bin/babel-parser.js
   checksum: 3/78e6273b7f3bb019d85d3142965f212d0e39d58f9a9077e893ac3fa6f5c4327886bb1866449d33ede4369d3a303808788955f6a7ea6ea72775b9c2f819fdeca9
-  languageName: node
-  linkType: hard
-
-"@babel/parser@npm:^7.10.2":
-  version: 7.10.2
-  resolution: "@babel/parser@npm:7.10.2"
-  bin:
-    parser: ./bin/babel-parser.js
-  checksum: 3/929624bbbcd82265a8d1930702c2da4a7546bd1bc7bd41dfacb37a9aa930c65be8ff10b18f73f85324b8a2574d03ea8dc1f4223f512c93218d7b488f0d8812f2
   languageName: node
   linkType: hard
 
@@ -1264,17 +1219,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/types@npm:^7.10.2":
-  version: 7.10.2
-  resolution: "@babel/types@npm:7.10.2"
-  dependencies:
-    "@babel/helper-validator-identifier": ^7.10.1
-    lodash: ^4.17.13
-    to-fast-properties: ^2.0.0
-  checksum: 3/cebcac3d3f083458fa671aef3a4d5346df86e5376cefe9b734dd7ae6a84f19935d588d07db450af56773aa995a440b80916d55da6f0c5c14f0755734b3fbe505
-  languageName: node
-  linkType: hard
-
 "@bcoe/v8-coverage@npm:^0.2.3":
   version: 0.2.3
   resolution: "@bcoe/v8-coverage@npm:0.2.3"
@@ -1701,21 +1645,30 @@ __metadata:
   resolution: "@mxro/app-react@workspace:packages/app-react"
   dependencies:
     "@mxro/react-components": 1.0.0
-    "@testing-library/jest-dom": "*"
-    "@testing-library/react": "*"
-    "@types/react": "*"
-    "@types/react-dom": "*"
-    fork-ts-checker-webpack-plugin: "*"
-    html-webpack-plugin: "*"
-    react: "*"
-    react-dom: "*"
-    webpack: "*"
-    webpack-cli: "*"
-    webpack-dev-server: "*"
+    "@testing-library/jest-dom": ^5.9.0
+    "@testing-library/react": ^10.0.4
+    "@types/jest": ^25.2.3
+    "@types/node": ^14.0.6
+    "@types/react": ^16.9.35
+    "@types/react-dom": ^16.9.8
+    "@types/testing-library__jest-dom": ^5.9.1
+    "@types/testing-library__react": ^10.0.1
+    fork-ts-checker-webpack-plugin: ^4.1.6
+    html-webpack-plugin: ^4.3.0
+    jest: ^26.0.1
+    pnp-webpack-plugin: ^1.6.4
+    react: ^16.13.1
+    react-dom: ^16.13.1
+    ts-jest: ^26.1.0
+    ts-loader: ^7.0.5
+    typescript: ^3.9.3
+    webpack: ^4.43.0
+    webpack-cli: ^3.3.11
+    webpack-dev-server: ^3.11.0
   languageName: unknown
   linkType: soft
 
-"@mxro/lib-hello@1.0.0, @mxro/lib-hello@workspace:shared/lib-hello":
+"@mxro/lib-hello@workspace:*, @mxro/lib-hello@workspace:shared/lib-hello":
   version: 0.0.0-use.local
   resolution: "@mxro/lib-hello@workspace:shared/lib-hello"
   dependencies:
@@ -1731,14 +1684,14 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@mxro/react-components@workspace:shared/react-components"
   dependencies:
-    "@babel/core": ^7.10.2
-    "@babel/plugin-transform-regenerator": ^7.10.1
     "@testing-library/jest-dom": ^5.9.0
     "@testing-library/react": ^10.0.4
     "@types/jest": ^25.2.3
     "@types/node": ^14.0.6
     "@types/react": ^16.9.35
     "@types/react-dom": ^16.9.8
+    "@types/testing-library__jest-dom": ^5.9.1
+    "@types/testing-library__react": ^10.0.1
     fork-ts-checker-webpack-plugin: ^4.1.6
     jest: ^26.0.1
     pnp-webpack-plugin: ^1.6.4
@@ -1747,8 +1700,6 @@ __metadata:
     ts-jest: ^26.1.0
     ts-loader: ^7.0.5
     typescript: ^3.9.3
-    webpack: ^4.43.0
-    webpack-cli: ^3.3.11
   languageName: unknown
   linkType: soft
 
@@ -1756,7 +1707,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@mxro/server-express@workspace:packages/server-express"
   dependencies:
-    "@mxro/lib-hello": 1.0.0
+    "@mxro/lib-hello": "workspace:*"
     "@types/express": ^4.17.6
     "@types/jest": ^25.2.3
     "@types/node": ^14.0.6
@@ -1925,7 +1876,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/jest-dom@npm:*, @testing-library/jest-dom@npm:^5.9.0":
+"@testing-library/jest-dom@npm:^5.9.0":
   version: 5.9.0
   resolution: "@testing-library/jest-dom@npm:5.9.0"
   dependencies:
@@ -1942,7 +1893,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/react@npm:*, @testing-library/react@npm:^10.0.4":
+"@testing-library/react@npm:^10.0.4":
   version: 10.0.4
   resolution: "@testing-library/react@npm:10.0.4"
   dependencies:
@@ -2393,7 +2344,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/testing-library__jest-dom@npm:^5.0.2":
+"@types/testing-library__jest-dom@npm:^5.0.2, @types/testing-library__jest-dom@npm:^5.9.1":
   version: 5.9.1
   resolution: "@types/testing-library__jest-dom@npm:5.9.1"
   dependencies:
@@ -6802,7 +6753,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fork-ts-checker-webpack-plugin@npm:*, fork-ts-checker-webpack-plugin@npm:^4.1.6":
+"fork-ts-checker-webpack-plugin@npm:^4.1.6":
   version: 4.1.6
   resolution: "fork-ts-checker-webpack-plugin@npm:4.1.6"
   dependencies:
@@ -7565,7 +7516,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"html-webpack-plugin@npm:*, html-webpack-plugin@npm:^4.3.0":
+"html-webpack-plugin@npm:^4.3.0":
   version: 4.3.0
   resolution: "html-webpack-plugin@npm:4.3.0"
   dependencies:
@@ -12415,7 +12366,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"react-dom@npm:*, react-dom@npm:^16.13.1":
+"react-dom@npm:^16.13.1":
   version: 16.13.1
   resolution: "react-dom@npm:16.13.1"
   dependencies:
@@ -12436,7 +12387,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"react@npm:*, react@npm:^16.13.1":
+"react@npm:^16.13.1":
   version: 16.13.1
   resolution: "react@npm:16.13.1"
   dependencies:
@@ -15260,7 +15211,7 @@ typescript@^3.9.3:
   languageName: node
   linkType: hard
 
-"webpack-cli@npm:*, webpack-cli@npm:^3.3.11":
+"webpack-cli@npm:^3.3.11":
   version: 3.3.11
   resolution: "webpack-cli@npm:3.3.11"
   dependencies:
@@ -15298,7 +15249,7 @@ typescript@^3.9.3:
   languageName: node
   linkType: hard
 
-"webpack-dev-server@npm:*, webpack-dev-server@npm:^3.11.0":
+"webpack-dev-server@npm:^3.11.0":
   version: 3.11.0
   resolution: "webpack-dev-server@npm:3.11.0"
   dependencies:
@@ -15367,7 +15318,7 @@ typescript@^3.9.3:
   languageName: node
   linkType: hard
 
-"webpack@npm:*, webpack@npm:4.43.0, webpack@npm:^4.43.0":
+"webpack@npm:4.43.0, webpack@npm:^4.43.0":
   version: 4.43.0
   resolution: "webpack@npm:4.43.0"
   dependencies:

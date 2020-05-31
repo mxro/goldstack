@@ -1,5 +1,5 @@
 import Hello from './Hello';
+import React from 'react';
 
-export {
-  Hello
-};
+const reactRef = React;
+export { Hello, reactRef };

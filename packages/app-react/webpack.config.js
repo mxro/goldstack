@@ -1,16 +1,23 @@
-import path from 'path';
-import webpack, { Configuration } from 'webpack';
-import HtmlWebpackPlugin from 'html-webpack-plugin';
-import ForkTsCheckerWebpackPlugin from 'fork-ts-checker-webpack-plugin';
+/* eslint-disable @typescript-eslint/explicit-function-return-type */
+/* eslint-disable @typescript-eslint/no-var-requires */
+const path = require('path');
+const PnpWebpackPlugin = require('pnp-webpack-plugin');
+const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
 
-const webpackConfig = (env): Configuration => ({
+const webpackConfig = (env) => ({
   entry: './src/index.tsx',
   resolve: {
     extensions: ['.ts', '.tsx', '.js'],
+    plugins: [PnpWebpackPlugin],
+  },
+  resolveLoader: {
+    plugins: [PnpWebpackPlugin.moduleLoader(module)],
   },
   output: {
     path: path.join(__dirname, '/dist'),
-    filename: 'build.js',
+    filename: 'index.js',
   },
   module: {
     rules: [
@@ -37,4 +44,4 @@ const webpackConfig = (env): Configuration => ({
   ],
 });
 
-export default webpackConfig;
+module.exports = webpackConfig;
