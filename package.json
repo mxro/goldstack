@@ -6,10 +6,8 @@
     "shared/*"
   ],
   "scripts": {
-    "bootstrap": "lerna bootstrap",
-    "bootstrap:prod": "NODE_ENV=production lerna bootstrap",
-    "build": "lerna run build",
-    "clean": "lerna clean --yes",
+    "build": "yarn workspace foreach run build",
+    "clean": "yarn workspace foreach run clean && yarn cache clean",
     "compile": "yarn workspaces foreach --parallel run compile",
     "compile:watch": "yarn workspaces foreach --parallel --interlaced run compile:watch",
     "coverage": "jest --coverage",
@@ -19,9 +17,7 @@
     "lint:fix": "eslint . --ext .js,.ts,tsx,json --fix",
     "package:doctor": "yarn dlx @yarnpkg/doctor .",
     "test": "yarn workspaces foreach --parallel --interlaced run test",
-    "test:ci": "yarn workspaces foreach --interlaced run test:ci",
-    "test:ui": "jest --passWithNoTests --watch --config=jest.config.ui.js",
-    "test:ui:ci": "jest --passWithNoTests --config=jest.config.ui.js"
+    "test:ci": "yarn workspaces foreach --interlaced run test:ci"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^2.30.0",
