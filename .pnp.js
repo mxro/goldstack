@@ -846,7 +846,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/react-dom", "npm:16.9.8"],
             ["@types/testing-library__jest-dom", "npm:5.9.1"],
             ["@types/testing-library__react", "npm:10.0.1"],
-            ["fork-ts-checker-webpack-plugin", "npm:4.1.6"],
             ["jest", "npm:26.0.1"],
             ["pnp-webpack-plugin", "npm:1.6.4"],
             ["react", "npm:16.13.1"],
