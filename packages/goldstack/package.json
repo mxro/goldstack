@@ -1,12 +1,17 @@
 {
   "name": "goldstack",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "keywords": [
     "cli",
     "goldstack",
     "starter-project",
     "typescript"
   ],
+  "homepage": "https://github.com/mxro/goldstack#goldstack",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:mxro/goldstack.git"
+  },
   "license": "MIT",
   "author": "Max Rohde",
   "main": "dist/goldstack.js",
