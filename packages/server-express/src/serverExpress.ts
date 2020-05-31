@@ -1,8 +1,12 @@
 import express from 'express';
 import { message } from '@mxro/lib-hello';
+import helmet from 'helmet';
 
 // Create a new express app instance
 const app: express.Application = express();
+
+app.use(helmet);
+
 app.get('/', (req, res) => {
   res.send(message);
 });

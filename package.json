@@ -10,13 +10,12 @@
     "clean": "yarn workspace foreach run clean && yarn cache clean",
     "compile": "yarn workspaces foreach --parallel run compile",
     "compile:watch": "yarn workspaces foreach --parallel --interlaced run compile:watch",
-    "coverage": "jest --coverage",
+    "coverage": "yarn workspaces foreach run coverage",
     "format": "prettier --write .",
     "format:check": "prettier .",
     "lint": "eslint . --ext .js,.ts,.tsx,json",
     "lint:fix": "eslint . --ext .js,.ts,tsx,json --fix",
     "package:doctor": "yarn dlx @yarnpkg/doctor .",
-    "test": "yarn workspaces foreach --parallel --interlaced run test",
     "test:ci": "yarn workspaces foreach --interlaced run test:ci"
   },
   "devDependencies": {

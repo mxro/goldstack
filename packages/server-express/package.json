@@ -10,16 +10,19 @@
     "build:watch": "yarn clean && yarn compile:watch",
     "clean": "rm -rf ./dist",
     "compile": "tsc -p tsconfig.json",
+    "coverage": "jest --collect-coverage --passWithNoTests --config=./jest.config.js",
     "start": "yarn node dist/serverExpress.js",
     "start:watch": "nodemon --watch ../../ --ext js --exec 'yarn node dist/serverExpress.js'",
     "test": "jest --passWithNoTests --watch --config=jest.config.js",
     "test:ci": "jest --passWithNoTests --config=jest.config.js"
   },
   "dependencies": {
-    "@mxro/lib-hello": "workspace:*"
+    "@mxro/lib-hello": "workspace:*",
+    "helmet": "^3.22.0"
   },
   "devDependencies": {
     "@types/express": "^4.17.6",
+    "@types/helmet": "^0.0.47",
     "@types/jest": "^25.2.3",
     "@types/node": "^14.0.6",
     "express": "^4.17.1",
