@@ -1,8 +1,5 @@
-# typescript-monorepo-starter
+# goldstack 
 
-Starter project for using TypeScript and Lerna.
+Work in progress
 
-## Limitations
-
-- `test` in root does not work yet.
-- `coverageThreshold` not defined (does not seem to work for some reason)
+goldstack is coming soon to https://goldstack.party.
