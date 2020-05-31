@@ -86,6 +86,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "npm:2.0.5"
       ],
       [
+        "react",
+        "npm:16.13.1"
+      ],
+      [
         "typescript",
         "patch:typescript@npm%3A3.9.4#builtin<compat/typescript>::version=3.9.4&hash=8cac75"
       ]
@@ -106,6 +110,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-prettier", "virtual:36a01d8083315b8a6e8362097258ea8bc0f9dfb672cb210742e054760850c673a1038f542a6b7156397b5275ace8ee0482231cac5e8898044fa1a1c29f78ee5b#npm:3.1.3"],
             ["eslint-plugin-react", "virtual:36a01d8083315b8a6e8362097258ea8bc0f9dfb672cb210742e054760850c673a1038f542a6b7156397b5275ace8ee0482231cac5e8898044fa1a1c29f78ee5b#npm:7.20.0"],
             ["prettier", "npm:2.0.5"],
+            ["react", "npm:16.13.1"],
             ["typescript", "patch:typescript@npm%3A3.9.4#builtin<compat/typescript>::version=3.9.4&hash=8cac75"]
           ],
           "linkType": "SOFT",
@@ -11004,6 +11009,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-prettier", "virtual:36a01d8083315b8a6e8362097258ea8bc0f9dfb672cb210742e054760850c673a1038f542a6b7156397b5275ace8ee0482231cac5e8898044fa1a1c29f78ee5b#npm:3.1.3"],
             ["eslint-plugin-react", "virtual:36a01d8083315b8a6e8362097258ea8bc0f9dfb672cb210742e054760850c673a1038f542a6b7156397b5275ace8ee0482231cac5e8898044fa1a1c29f78ee5b#npm:7.20.0"],
             ["prettier", "npm:2.0.5"],
+            ["react", "npm:16.13.1"],
             ["typescript", "patch:typescript@npm%3A3.9.4#builtin<compat/typescript>::version=3.9.4&hash=8cac75"]
           ],
           "linkType": "SOFT",
